@@ -6,6 +6,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "vercel-build": "echo vercel",
     "dev": "npx nodemon src/index.js"
   },
   "dependencies": {
