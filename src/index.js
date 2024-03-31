@@ -21,11 +21,13 @@ app.use(express.urlencoded({ extended: true }));
  */
 // Hello this is T-STORE
 
-app.use("/api", apiRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+
+app.use("/api", apiRoutes);
+
 app.listen(ServerConfig.PORT, async () => {
   try {
     await DatabaseConfig.connect()
